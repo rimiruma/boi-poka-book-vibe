@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const links = <>
     <li className="mr-5 -mt-2 hover:bg-lime-600 font-bold text-xl border"><NavLink to="/home">Home</NavLink></li>
-    <li><NavLink>Listed Books</NavLink></li>
+    <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
     <li className="ml-10"><NavLink>Pages to Read</NavLink></li>
 </>
 
