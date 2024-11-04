@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Root from './Components/Root/Root.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
-import Home from './Components/H0me/Home.jsx';
+import Home from './Components/Home/Home.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import BookDetail from './Components/BookDetail/BookDetail.jsx';
 import ListedBooks from './Components/ListedBooks/ListedBooks.jsx';
@@ -32,7 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'listedBooks',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        loader: () => fetch('./booksData.json')
       },
       {
         path: 'dashboard',
